@@ -55,14 +55,17 @@
 
       details{
         list-style: none;
+        list-style-type: none;
       }
 
       summary{
         list-style: none;
+        list-style-type: none;
       }
 
       ul {
         list-style-type: "";
+        list-style-type: none;
       }
 
       .pc-primary{
@@ -127,6 +130,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
+      }
+
+
+      .d-block{
+        display: block;
       }
 
       .c-row{
@@ -216,7 +224,7 @@
     <div class="section s-black">
       <div class="container d-cont">
         <details id="details" class="pc-white">
-          <summary><h2 class="p-small">kolektif code</h2></summary>
+          <summary class="d-block"><h2 class="p-small d-block">kolektif code</h2></summary>
           <p class="p-medium pc-white"> <b>
             In the digital dojo of Kolektif Ninja, we sculpt excellence with a raw, minimalist touch. Our code of conduct is our silent creed, a manifesto of brutalist poetry guiding every keystroke, every pixel, and every interaction.
             </b></p>
