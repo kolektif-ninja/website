@@ -29,6 +29,7 @@
         letter-spacing: -0.02rem;
         padding: 0px;
         margin: 0px;
+        cursor: url("img/cursor.svg") 0 0, auto;
       }
 
 
@@ -52,16 +53,8 @@
         color: var(--black);
       }
 
-      details{
-          row-gap: 4vw;
-          column-gap: 4vw;
-          max-width: 1280px;
-          cursor: pointer;
-      }
-
       summary{
-          list-style: none;
-          cursor: pointer;
+        list-style: none;
       }
 
       .pc-primary{
@@ -121,10 +114,45 @@
         row-gap: 4vw;
       }
 
+      .d-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+      }
+
       .c-row{
         flex-direction: row;
         align-items: center;
         justify-content:space-between;
+      }
+
+      .down-arrow{
+        margin-left: -24px;
+        height: 24px;
+        min-height: 24px;
+        width: 24px;
+        min-width: 24px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("img/arrow.svg");
+        transform: rotate(0);
+        transition:300ms ease all;
+      }
+
+
+      #details[open] + #downarrow {
+        height: 24px;
+        min-height: 24px;
+        width: 24px;
+        min-width: 24px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("img/arrow.svg");
+        transform: rotate(180deg);
+        transition:300ms ease all;
       }
 
       @media screen and (max-width: 960px) {
@@ -178,12 +206,11 @@
       </div>
     </div>
     <div class="section s-black">
-      <div class="container">
-        <details>
-          <summary><h2 class="p-small pc-white">kolektif code&nbsp;&nbsp;↙</h2></summary>
-          <br />
-          <br />
+      <div class="container d-cont">
+        <details  id="details">
+          <summary><h2 class="p-small pc-white">kolektif code</h2></summary>
           <p class="p-medium pc-white">
+            <br /><br />
             <b>
               In the digital dojo of Kolektif Ninja, we sculpt excellence with a
               raw, minimalist touch. Our code of conduct is our silent creed, a
@@ -277,6 +304,7 @@
             <br />
           </p>
         </details>
+         <div id="downarrow" class="down-arrow"></div>
       </div>
     </div>
     <div class="section">
