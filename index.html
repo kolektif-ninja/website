@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://kolektif.ninja/" rel="canonical" />
-    <link href="img/kon-icon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="img/kon-vermillion.png" rel="shortcut icon" type="image/x-icon" />
     <title>Dojo - Kolektif Ninja</title>
     <meta content="Crafting digital experiences with profound simplicity, functionality, and beauty — Kolektif Ninja; a full-cycle software development studio based in Toronto." name="description" />
     <meta content="Dojo - Kolektif Ninja" property="og:title" />
     <meta content="Crafting digital experiences with profound simplicity, functionality, and beauty — Kolektif Ninja; a full-cycle software development studio based in Toronto." property="og:description" />
-    <meta content="immg/cover.jpg" property="og:image" />
+    <meta content="img/cover.jpg" property="og:image" />
     <meta content="Dojo - Kolektif Ninja" property="twitter:title" />
     <meta content="Crafting digital experiences with profound simplicity, functionality, and beauty — Kolektif Ninja; a full-cycle software development studio based in Toronto." property="twitter:description" />
-    <meta content="immg/cover.jpg" property="twitter:image" />
+    <meta content="img/cover.jpg" property="twitter:image" />
     <meta property="og:type" content="website" />
     <style>
           :root{
@@ -95,6 +95,15 @@
         width: 100%;
       }
 
+      .logo{
+        background-image: img/kon-space.svg;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 15vw;
+        height: auto;
+      }
+
       .pc-primary{
         color: var(--primary);
       }
@@ -150,6 +159,10 @@
         flex-direction: column;
         column-gap: 3vw;
         row-gap: 4vw;
+      }
+
+      .c-hero{
+        align-items: flex-end;
       }
 
       .d-cont{
@@ -226,14 +239,9 @@
   </head>
   <body>
     <div class="section s-hero">
-      <div class="container">
-        <script
-          type="module" fetchpriority="high"
-          src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"
-        ></script>
-        <spline-viewer
-          url="https://prod.spline.design/KnuWZTEeay3tfuSf/scene.splinecode"
-        ></spline-viewer>
+      <div class="container c-hero">
+        <div class="logo">
+        </div>
       </div>
     </div>
     <div class="section">
